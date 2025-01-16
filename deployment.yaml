@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-     app: healthcare
+      app: healthcare
   template:
     metadata:
       labels:
@@ -24,10 +24,11 @@ kind: Service
 metadata:
   name: healthcare
 spec:
-selector:
+  selector:
     app: healthcare
   type: NodePort
   ports:
     - port: 80
       targetPort: 8082
       nodePort: 30007
+
