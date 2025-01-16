@@ -9,12 +9,12 @@ spec:
       app: healthcare
   template:
     metadata:
-labels:
+      labels:
         app: healthcare
     spec:
       containers:
       - name: healthcare
-        image: vikuldocker/healthcare-vikul:1
+        image: madhvika/healthcare-madhvika:1 
         ports:
         - containerPort: 8082
 
